@@ -1,0 +1,18 @@
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Hobby</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for ds in datas%}
+        <tr>
+        <th scope="row">{{ds.id}}</th>
+        <td>{{ds.name}}</td>
+        <td>{{ds.hobby}}</td>
+      </tr>
+      {%endfor %}
+      </tbody>
+    </table>
